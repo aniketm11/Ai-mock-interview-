@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPYVR - Contact Us</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #dfe4f2, #eef1f6);
+      color: #000;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    .header-bg {
+      background: linear-gradient(135deg, #0a1633, #12244d, #1c3a73);
+      height: 280px;
+      width: 100%;
+      animation: slideDown 1.2s ease-in-out;
+    }
+
+    /* Contact Card */
+    .contact-container {
+      max-width: 900px;
+      background: #ffffff;
+      margin: -150px auto 20px;
+      padding: 55px 40px;
+      border-radius: 18px;
+      box-shadow: 0px 15px 40px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
+    }
+
+    .contact-container h1 {
+      font-size: 40px;
+      font-weight: 900;
+      margin-bottom: 30px;
+      color: #0f1b3d;
+      position: relative;
+    }
+
+    .contact-container h1::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #2a5bff;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 5px;
+      animation: expand 1s ease-in-out;
+    }
+
+    /* Contact list */
+    .contact-box {
+      box-shadow: 0 0 10px #2a5bff, 0 0 20px #2a5bff inset;
+      background: #f5f7ff;
+      padding: 18px;
+      margin: 15px auto;
+      max-width: 500px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    .contact-box:hover {
+      box-shadow: 0 0 15px #2a5bff, 0 0 30px #2a5bff inset;
+      transform: scale(1.04);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .contact-box i {
+      font-size: 22px;
+      color: #2a5bff;
+    }
+
+    .contact-box strong {
+      font-size: 19px;
+      color: #0d1b3f;
+    }
+
+    /* Thank you */
+    .thankyou {
+      text-align: center;
+      margin-top: 35px;
+      font-size: 20px;
+      color: #000;
+      font-weight: 800;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Social Icons */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      animation: fadeIn 1.7s ease-in-out;
+    }
+
+    .social-links i {
+      text-shadow: 0 0 10px #2a5bff, 0 0 20px #2a5bff;
+      font-size: 38px;
+      color: #2a5bff;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-links i:hover {
+      text-shadow: 0 0 15px #2a5bff, 0 0 30px #2a5bff;
+      transform: translateY(-5px) scale(1.2);
+      color: #12244d;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-80px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes expand {
+      0% { width: 0; }
+      100% { width: 80px; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-container {
+        margin: -130px 20px 20px;
+        padding: 40px 25px;
+      }
+
+      .contact-container h1 {
+        font-size: 32px;
+      }
+
+      .contact-box {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header-bg"></div>
+
+  <div class="contact-container">
+    <h1>Get in Touch</h1>
+
+    <div class="contact-box">
+      <i class="fa-solid fa-user"></i>
+      <strong>Srushti Sagare</strong> - 7249890895
+    </div>
+
+    <div class="contact-box">
+      <i class="fa-solid fa-user"></i>
+      <strong>Prajakta Koli</strong> - 8766670426
+    </div>
+
+    <div class="contact-box">
+      <i class="fa-solid fa-user"></i>
+      <strong>Aniket Mulik</strong> - 7758804288
+    </div>
+
+    <div class="contact-box">
+      <i class="fa-solid fa-user"></i>
+      <strong>Shivam Ingale</strong> - 8010552239
+    </div>
+  </div>
+
+  <p class="thankyou">Thank you for visiting us</p>
+
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-google"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+
+</body>
+</html>
